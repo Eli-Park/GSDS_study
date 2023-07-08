@@ -6,7 +6,6 @@ public:
         int ptr1 = 0;
         int ptr2 = 0;
         int k = (nums1.size() + nums2.size()) - 1;
-        int c = 0;
         while (true)  {
             if(nums1.size() == 0) {
                 merged = nums2;
@@ -24,7 +23,6 @@ public:
             }
             else {
                 merged.push_back(nums1[ptr1]);
-                cout<<"nums1 append"<<ptr1<<endl;
                 ptr1+=1;
             }
             if (ptr1 > nums1.size()-1 || ptr2 > nums2.size()-1) {
